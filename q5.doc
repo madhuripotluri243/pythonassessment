@@ -1,0 +1,13 @@
+def flatten_once(nested):
+    flattened = []
+    for item in nested:
+        if isinstance(item, list):
+            flattened.extend(item)  
+        else:
+            flattened.append(item) 
+    return flattened
+
+  flatten_once([1, [2, 3], 4, [5, 6]])
+  flatten_once([[1, 2], [3], [4,5]])
+  flatten_once([1, 2, 3])
+  flatten_once([1, 2, 3, 4, 5, 6])
