@@ -1,0 +1,11 @@
+def extract_digits(s):
+  digits = []
+  for char in s:
+        if char.isdigit():
+            digits.append(int(char))
+  return digits
+
+  extract_digits("abc123xyz")
+  extract_digits("no digits here!")
+  extract_digits("007bond")
+  extract_digits("a1b2c3d4")
