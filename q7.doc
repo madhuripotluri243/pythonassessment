@@ -1,0 +1,12 @@
+def word_count(sentence):
+    words = sentence.lower().split()
+    result = {}
+    for word in words:
+        result[word] = result.get(word, 0) + 1
+    
+    return result
+
+result = word_count("AI is the future and ai is powerful")
+print(result)
+result = word_count("Hello hello HELLO")
+print(result)
