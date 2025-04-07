@@ -1,0 +1,7 @@
+def top_k_frequent(num[], k):
+  frequency = Counter(num)
+  most_common = frequency.most_common(k)
+  result = []
+  for item, count in most_common:
+        result.append(item)
+        return result
